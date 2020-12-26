@@ -127,4 +127,21 @@ private int[][] board= new int[3][3];
 	       }
 	       return iswon;
 	}
+ /*Validation of Diagonal move success*/
+	public boolean isDiagonalWon(int player){
+		  
+		  boolean iswon = false;
+
+	      if (((board[0][0] + board[1][1] + board[2][2] == player*3)) ||
+					((board[2][0] + board[1][1] + board[0][2] == player*3)))
+		           
+	      {
+	   	   iswon = true;   
+	      }
+	      else {
+	   	   iswon = false;
+	      }
+	      return iswon;
+	  
+	  }
 }
