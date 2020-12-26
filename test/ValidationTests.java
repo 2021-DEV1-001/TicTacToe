@@ -31,6 +31,10 @@ public class ValidationTests {
 	assertEquals(false,gameboard.ishorizontalWon(1));
 	
 	}
-	
+	/*Checking of Vertical won probabilities*/	
+	@Test
+	public void ValidateVerticalMoveSuccess(){		
+	assertEquals(false,gameboard.isVerticalWon(1));	
+	}
 }
 

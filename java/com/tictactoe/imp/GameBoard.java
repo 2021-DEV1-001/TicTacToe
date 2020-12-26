@@ -111,5 +111,20 @@ private int[][] board= new int[3][3];
 	       return iswon;
 	}
   
-	
+	/*Validation of Vertical move success*/
+	public boolean isVerticalWon(int player){
+		
+		boolean iswon = false;
+
+	       if (((board[0][0] + board[1][0]  + board[2][0]) == (player * 3)) ||
+		            ((board[0][1] + board[1][1] + board[2][1]) == (player * 3)) ||
+		            ((board[0][2] + board[1][2] + board[2][2]) == (player * 3)))
+	       {
+	    	   iswon = true;   
+	       }
+	       else {
+	    	   iswon = false;
+	       }
+	       return iswon;
+	}
 }
