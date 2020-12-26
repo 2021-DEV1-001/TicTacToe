@@ -72,12 +72,12 @@ private int[][] board= new int[3][3];
 	public void displayWinner() {
 		// TODO Auto-generated method stub
 		
-		if(ishorizontalWon(A))
+		if(ishorizontalWon(A)||isVerticalWon(A)||isDiagonalWon(A))
 		{
 			System.out.println("\n player A won the game!!!!");
 			isEmpty=false;
 		}
-		else if(ishorizontalWon(B))
+		else if(ishorizontalWon(B)||isVerticalWon(B)||isDiagonalWon(B))
 		{
 			System.out.println("\n player B won the game!!!!");
 			isEmpty=false;
