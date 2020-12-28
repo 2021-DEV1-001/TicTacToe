@@ -16,7 +16,7 @@ private int[][] board= new int[3][3];
 		return boardsize;
 
 	}
-	
+	/*Displaying the board with 3*3 size*/
 	public String toString()
 	{
 		StringBuilder s = new StringBuilder();
@@ -51,7 +51,7 @@ private int[][] board= new int[3][3];
 		}
 		return s.toString();
 	}
-  
+  /*Checking the valid positions for given player*/
 	public void positionTaken(int x, int y) {
 		// TODO Auto-generated method stub
 		
@@ -69,7 +69,9 @@ private int[][] board= new int[3][3];
 		player = -player;
 		
 	}
-	public void displayWinner() {
+	
+         /*Displays the winner of the game from two players*/
+               public void displayWinner() {
 		// TODO Auto-generated method stub
 		
 		if(ishorizontalWon(A)||isVerticalWon(A)||isDiagonalWon(A))
